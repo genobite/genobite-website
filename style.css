@@ -1,8 +1,43 @@
+body,
+html{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	background-color: #283F65;
+    width: 100%;
+    height: auto;
+}
+
+#content {
+    position: fixed;
+    background-color: #283F65;
+    width:100%;
+    height: 100%;
+    opacity: .8;
 }
 
 #logo {
-	margin: auto;
-	width:100%;
+    width:100%;
+    height: 100%;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
 }
